@@ -19,11 +19,11 @@ random.seed(1)
 my_agent = MyAgent()
 random_agent = RandomAgent()
 
-my_agent = MyAgent(alpha=0.8, epsilon=0.2)
+my_agent = MyAgent(alpha=0.5,epsilon=1.0)
 
 train_and_plot(
     agent=my_agent,
     validation_agent=random_agent,
-    iterations=50,
+    iterations=100,
     trainings=1000,
     validations=1000)
